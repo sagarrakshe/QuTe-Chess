@@ -1,0 +1,40 @@
+
+int Tile::CanMove(Tile *click2,Tile *temp1)
+{
+   int var=0;
+   int restore_color=0;
+   int restore_piece=0;
+   char restore_pieceName=NULL;
+   restore_piece=temp1->piece;
+   restore_color=temp1->pieceColor;
+   restore_pieceName=temp1->pieceName;
+
+    click2->piece=0;    //clears present status of box
+    temp1->piece=1;       //marks present to new box where piece is moved
+
+    temp1->pieceColor=click2->pieceColor;
+    temp1->pieceName=click2->pieceName;
+
+    if(temp1->pieceName=='K' && temp1->pieceColor)
+        W=temp1->row*8+temp1->col;
+
+    if(temp1->pieceName=='K' && !temp1->pieceColor)
+        B=temp1->row*8+temp1->col;
+    //check Wheter moving this object causes check to crnt king
+    var=valid->AmIInCheck();
+
+    if(click2->pieceName=='K' && click2->pieceColor)
+        W=temp1->row*8+temp1->col;
+
+    if(click1->pieceName=='K' && !click1->pieceColor)
+        B=temp1->row*8+temp1->col;
+
+    click2->piece=1;    //clears present status of box
+    click2->pieceColor=temp1->pieceColor;
+    click2->pieceName=temp1->pieceName;
+    temp1->pieceColor=restore_color;
+    temp1->pieceName=restore_pieceName;
+    temp1->piece=restore_piece;
+    return var;
+
+}

@@ -1,0 +1,49 @@
+int validation::IsGameOver()
+{
+    //check any of the piece can move
+    //check that crt player can move
+    //exp>= 1 considering moving that object will not cause check to king
+    int flag=1;
+    int tileNO=0;
+     Tile *temp = new Tile();
+      Tile *click2 = new Tile();
+      Tile *obj=new Tile();
+    int trow=0,tcol=0;
+    for (int Row = 0; Row < 8; ++Row) {
+        for (int Col = 0; Col < 8; ++Col) {
+                if (tile[Row][Col]->piece != 0)
+                {
+                        if (tile[Row][Col]->pieceColor ==turn)
+                        {
+                            zero=0;
+                            max=0;
+                            while(zero<30)
+                                exp[zero++]=0;
+                            click2=tile[Row][Col];
+                            if(chooser(tile[Row][Col]))
+                                {
+                                    // movethat object to that tile n see if check clears or not
+                                  if(max)
+                                  {  for(i=0;i<max;i++)
+                                    {
+                                        tileNO=exp[i];
+                                        trow=tileNO/8;
+                                        tcol=tileNO%8;
+                                        temp=tile[trow][tcol];
+                                        flag=obj->CanMove(click2,temp);
+                                        if(flag==0)
+                                            goto outer;
+
+                                    }
+                                  }
+                                }
+                        }
+                }
+        }
+    }
+outer:;
+    if(flag==1)
+        return 1;
+    else
+        return 0;
+}
