@@ -7,9 +7,7 @@
 Follow the below instructions.
 
     $ git clone https://github.com/sagarrakshe/QuTe-Ches
-    
     $ make
-
     $ make clean
 
 To start the game, execute the **Chess** file
