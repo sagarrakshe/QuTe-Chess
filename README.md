@@ -14,4 +14,6 @@ To start the game execute the **Chess** file
     
     $ ./Chess
 
+![chess-game](https://raw.github.com/sagarrakshe/QuTe-Chess/master/Images/chess-game.png)
 
+`sagarrakshe2@gmail.com`
