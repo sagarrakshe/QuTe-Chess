@@ -407,10 +407,10 @@ void displayMove(Tile *test,Tile *test2)
        const char *piece;
        int i;
 
-       qDebug()<<test->pieceColor<<turn;
+       //qDebug()<<test->pieceColor<<turn;
        if(turn==test->pieceColor)
        {
-           qDebug()<<"Entered at least func";
+           //qDebug()<<"Entered at least func";
 
            if(turn)
                myMove=" W    ";
@@ -426,7 +426,7 @@ void displayMove(Tile *test,Tile *test2)
            myMove.append(test2->col+65);
 
            moves->addItem(myMove);
-           qDebug()<<"Entered!!";
+           //qDebug()<<"Entered!!";
 
        }
 }
