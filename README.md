@@ -4,13 +4,15 @@
 
 ## Installation
 
-Clone the repo-
+Follow the below instructions.
 
     $ git clone https://github.com/sagarrakshe/QuTe-Ches
     
     $ make
 
-To start the game execute the **Chess** file
+    $ make clean
+
+To start the game, execute the **Chess** file
     
     $ ./Chess
 
