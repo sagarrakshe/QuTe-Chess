@@ -14,6 +14,9 @@ To start the game execute the **Chess** file
     
     $ ./Chess
 
+After few seconds you will be asked to enter names of the two player. 
+
+
 ![chess-game](https://raw.github.com/sagarrakshe/QuTe-Chess/master/Images/chess-game.png)
 
 `sagarrakshe2@gmail.com`
