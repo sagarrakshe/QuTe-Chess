@@ -20,4 +20,4 @@ After few seconds you will be asked to enter names of the two player.
 
 ## Contribute
 
-To contibute to `cute chess` fork the project and send pull request.
+To contribute to `cute chess` fork the project and send pull request.
