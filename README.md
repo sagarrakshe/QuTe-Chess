@@ -1,6 +1,6 @@
 ## Cute Chess v0.1
 
-**Cute Chess** is simple two player chess game.
+**Cute Chess** is simple two player chess game made using `QT`.
 
 ## Installation
 
@@ -16,7 +16,8 @@ To start the game, execute the **Chess** file
 
 After few seconds you will be asked to enter names of the two player. 
 
-
 ![chess-game](https://raw.github.com/sagarrakshe/QuTe-Chess/master/Images/chess-game.png)
 
-`sagarrakshe2@gmail.com`
+## Contribute
+
+To contibute to `cute chess` fork the project and send pull request.
